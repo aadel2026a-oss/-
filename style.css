@@ -1,0 +1,421 @@
+/* =========================
+   إعدادات عامة
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    direction: rtl;
+    background: #fffdf5;
+    color: #333;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background: linear-gradient(135deg, #f6c800, #ffe66d);
+    text-align: center;
+    padding: 40px 20px;
+    color: #3b3200;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+}
+ 
+
+/* =========================
+   Navigation
+========================= */
+
+nev {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #222;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nev a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nev a:hover {
+    background: #f6c800;
+    color: #222;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   Main
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================
+   Hero
+========================= */
+
+#hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+#hero img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #f6c800;
+    margin-bottom: 20px;
+}
+
+#hero h2 {
+    font-size: 32px;
+    color: #d5a900;
+}
+
+/* =========================
+   Sections
+========================= */
+
+section {
+    background: white;
+    margin: 30px 0;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #c49b00;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-right: 5px solid #f6c800;
+    padding-right: 12px;
+}
+
+/* =========================
+   About
+========================= */
+
+#about p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* =========================
+   Services
+========================= */
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#services h2 {
+    grid-column: 1 / -1;
+}
+
+#services article {
+    background: #fff8c9;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #f6d84a;
+    transition: 0.3s;
+}
+
+#services article:hover {
+    transform: translateY(-7px);
+    background: #fff2a8;
+}
+
+#services h3 {
+    color: #b18a00;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   Portfolio
+========================= */
+
+#portfolio {
+    text-align: center;
+}
+
+#portfolio figure {
+    display: inline-block;
+    background: #fffbea;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #f6d84a;
+}
+
+#portfolio img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#portfolio img:hover {
+    transform: scale(1.05);
+}
+
+#portfolio figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #a47f00;
+}
+
+/* =========================
+   Skills
+========================= */
+
+#skills {
+    background: #f6c800;
+    color: #332b00;
+}
+
+#skills h2 {
+    color: #332b00;
+    border-right-color: white;
+}
+
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#skills th {
+    background: #333;
+    color: white;
+    padding: 12px;
+}
+
+#skills td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#skills tr:hover td {
+    background: #fff4ad;
+}
+
+/* =========================
+   Education & Experience
+========================= */
+
+#education li,
+#experience li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff8d6;
+    border-right: 4px solid #f6c800;
+    border-radius: 8px;
+}
+
+#education ul,
+#experience ol {
+    padding-right: 25px;
+}
+
+/* =========================
+   Contact
+========================= */
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #665200;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #e5c52c;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+    border-color: #c49b00;
+    box-shadow: 0 0 5px rgba(246, 200, 0, 0.4);
+}
+
+#contact textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+#contact button {
+    margin-top: 15px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    background: #f6c800;
+    color: #222;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background: #222;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   Aside
+========================= */
+
+aside {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+aside h3 {
+    color: #f6c800;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+aside a:hover {
+    color: #f6c800;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
+   Responsive للجوال
+========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nev {
+        position: static;
+    }
+
+    nev a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 22px 15px;
+    }
+
+    #services {
+        grid-template-columns: 1fr;
+    }
+
+    #hero {
+        padding: 45px 15px;
+    }
+
+    #hero img {
+        width: 140px;
+        height: 140px;
+    }
+
+    #skills table {
+        font-size: 14px;
+    }
+}
